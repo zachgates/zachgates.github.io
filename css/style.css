@@ -1,0 +1,116 @@
+@font-face {
+	font-family: "Quicksand";
+	src: url('quicksand.otf');
+}
+
+@font-face {
+	font-family: "Quicksand";
+	src: url('quicksand_bd.otf');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "Quicksand";
+	src: url('quicksand_ob.otf');
+	font-style: oblique;
+}
+
+@font-face {
+	font-family: "Quicksand";
+	src: url('quicksand_bd_ob.otf');
+	font-weight: bold;
+	font-style: oblique;
+}
+
+@font-face {
+	font-family: "Quicksand";
+	src: url('quicksand_lt_ob.otf');
+	font-weight: 100;
+	font-style: oblique;
+}
+
+@font-face {
+	font-family: "Quicksand-Dash";
+	src: url('quicksand_dash.otf');
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #bbd4d4;
+	font-family: "Quicksand";
+}
+
+div.header {
+	display: none;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height: 100px;
+	z-index: 100;
+	background-color: #ffffff;
+}
+
+div#main-content {
+	width: 100%;
+	padding-top: 150px;
+}
+
+div#main-photo-cont {
+	display: table;
+	margin: 0px auto;
+}
+
+div#main-photo-cont div#img-cont {
+	position: relative;
+	width: 666px;
+	height: 400px;
+	padding: 0px 17px;
+}
+
+div#main-photo-cont div#img-cont img {
+	display: none;
+	position: absolute;
+	width: 666px;
+	height: 400px;
+}
+
+div#main-photo-cont div#img-cont img#left {
+	z-index: 1;
+}
+
+div#main-photo-cont div#img-cont img#center {
+	z-index: 3;
+}
+
+div#main-photo-cont div#img-cont img#right {
+	z-index: 2;
+}
+
+div#main-photo-cont div#tagline {
+	display: none;
+	width: 700px;
+	height: 60px;
+	text-align: center;
+	background-color: #4d8f8f;
+	border-radius: 8px;
+}
+
+div#main-photo-cont div#tagline table#jobs {
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	border-spacing: 0px;
+}
+
+div#main-photo-cont div#tagline table#jobs td {
+	width: 33%;
+	padding: 0px;
+}
+
+div#main-photo-cont div#tagline table#jobs td p {
+	display: inline-block;
+	margin-top: 24px;
+	font-size: 18px;
+	font-weight: bold;
+}
