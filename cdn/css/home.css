@@ -3,9 +3,16 @@ body {
 	padding: 0px;
 	background-color: #bbd4d4;
 	color: #1d4e4e;
-	background-image: url("/cdn/img/background.jpg");
-	background-size: 100%;
 	font-family: "Quicksand";
+	
+	background-image: url("/cdn/img/background.jpg");
+	background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+	
+	@media (max-width: @iphone-screen) {
+		background-attachment: scroll;
+	}
 }
 
 a {
