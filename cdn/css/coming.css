@@ -1,0 +1,15 @@
+div#main-content {
+	display: none;
+	text-align: center;
+}
+
+div#main-content span#exclamation {
+	font-size: 200px;
+}
+
+div#main-content p#coming-soon {
+	margin-top: 25px;
+	font-family: "Quicksand";
+	font-size: 50px;
+	font-weight: bold;
+}

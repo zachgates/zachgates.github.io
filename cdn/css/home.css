@@ -1,39 +1,3 @@
-@font-face {
-	font-family: "Quicksand";
-	src: url('../fonts/quicksand.otf');
-}
-
-@font-face {
-	font-family: "Quicksand";
-	src: url('../fonts/quicksand_bd.otf');
-	font-weight: bold;
-}
-
-@font-face {
-	font-family: "Quicksand";
-	src: url('../fonts/quicksand_ob.otf');
-	font-style: oblique;
-}
-
-@font-face {
-	font-family: "Quicksand";
-	src: url('../fonts/quicksand_bd_ob.otf');
-	font-weight: bold;
-	font-style: oblique;
-}
-
-@font-face {
-	font-family: "Quicksand";
-	src: url('../fonts/quicksand_lt_ob.otf');
-	font-weight: 100;
-	font-style: oblique;
-}
-
-@font-face {
-	font-family: "Quicksand-Dash";
-	src: url('../fonts/quicksand_dash.otf');
-}
-
 body {
 	margin: 0px;
 	padding: 0px;
