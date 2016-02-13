@@ -1,44 +1,50 @@
 @font-face {
 	font-family: "Quicksand";
-	src: url('quicksand.otf');
+	src: url('../fonts/quicksand.otf');
 }
 
 @font-face {
 	font-family: "Quicksand";
-	src: url('quicksand_bd.otf');
+	src: url('../fonts/quicksand_bd.otf');
 	font-weight: bold;
 }
 
 @font-face {
 	font-family: "Quicksand";
-	src: url('quicksand_ob.otf');
+	src: url('../fonts/quicksand_ob.otf');
 	font-style: oblique;
 }
 
 @font-face {
 	font-family: "Quicksand";
-	src: url('quicksand_bd_ob.otf');
+	src: url('../fonts/quicksand_bd_ob.otf');
 	font-weight: bold;
 	font-style: oblique;
 }
 
 @font-face {
 	font-family: "Quicksand";
-	src: url('quicksand_lt_ob.otf');
+	src: url('../fonts/quicksand_lt_ob.otf');
 	font-weight: 100;
 	font-style: oblique;
 }
 
 @font-face {
 	font-family: "Quicksand-Dash";
-	src: url('quicksand_dash.otf');
+	src: url('../fonts/quicksand_dash.otf');
 }
 
 body {
 	margin: 0px;
 	padding: 0px;
 	background-color: #bbd4d4;
+	color: #262a2a;
 	font-family: "Quicksand";
+}
+
+a {
+	color: #262a2a;
+	text-decoration: none;
 }
 
 div.header {
@@ -49,6 +55,16 @@ div.header {
 	height: 100px;
 	z-index: 100;
 	background-color: #ffffff;
+}
+
+div.header div#inner-cont {
+	height: 40px;
+	padding: 30px 100px;
+}
+
+div.header a#home-button {
+	line-height: 40px;
+	font-size: 40px;
 }
 
 div#main-content {
