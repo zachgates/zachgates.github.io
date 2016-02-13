@@ -2,12 +2,14 @@ body {
 	margin: 0px;
 	padding: 0px;
 	background-color: #bbd4d4;
-	color: #262a2a;
+	color: #1d4e4e;
+	background-image: url("/cdn/img/background.jpg");
+	background-size: 100%;
 	font-family: "Quicksand";
 }
 
 a {
-	color: #262a2a;
+	color: #1d4e4e;
 	text-decoration: none;
 }
 
@@ -88,7 +90,7 @@ div#main-photo-cont div#tagline {
 	width: 700px;
 	height: 60px;
 	text-align: center;
-	background-color: #4d8f8f;
+	background-color: #bbd4d4;
 	border-radius: 8px;
 }
 
