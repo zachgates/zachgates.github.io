@@ -1,0 +1,148 @@
+@font-face {
+	font-family: "Quicksand";
+	src: url('../fonts/quicksand.otf');
+}
+
+@font-face {
+	font-family: "Quicksand";
+	src: url('../fonts/quicksand_bd.otf');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "Quicksand";
+	src: url('../fonts/quicksand_ob.otf');
+	font-style: oblique;
+}
+
+@font-face {
+	font-family: "Quicksand";
+	src: url('../fonts/quicksand_bd_ob.otf');
+	font-weight: bold;
+	font-style: oblique;
+}
+
+@font-face {
+	font-family: "Quicksand";
+	src: url('../fonts/quicksand_lt_ob.otf');
+	font-weight: 100;
+	font-style: oblique;
+}
+
+@font-face {
+	font-family: "Quicksand-Dash";
+	src: url('../fonts/quicksand_dash.otf');
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #bbd4d4;
+	color: #262a2a;
+	font-family: "Quicksand";
+}
+
+a {
+	color: #262a2a;
+	text-decoration: none;
+}
+
+div.header {
+	display: none;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height: 100px;
+	z-index: 100;
+	background-color: #ffffff;
+}
+
+div.header div#inner-cont {
+	height: 30px;
+	padding: 35px 100px;
+}
+
+div.header div#inner-cont span {
+	display: block;
+	width: 30px;
+	height: 30px;
+	margin: 0px 10px;
+	line-height: 30px;
+	font-size: 30px;
+}
+
+div.header div#inner-cont span {
+	float: left;
+}
+
+div.header div#inner-cont span#twitter {
+	float: right;
+}
+
+div#main-content {
+	width: 100%;
+	padding-top: 150px;
+}
+
+div#main-photo-cont {
+	display: table;
+	margin: 0px auto;
+}
+
+div#main-photo-cont div#img-cont {
+	position: relative;
+	width: 666px;
+	height: 400px;
+	padding: 0px 17px;
+	overflow: hidden;
+}
+
+div#main-photo-cont div#img-cont img {
+	position: absolute;
+	width: 666px;
+	height: 400px;
+	opacity: 0;
+}
+
+div#main-photo-cont div#img-cont img#left {
+	z-index: 1;
+	left: 700px;
+}
+
+div#main-photo-cont div#img-cont img#center {
+	z-index: 3;
+	top: 400px;
+}
+
+div#main-photo-cont div#img-cont img#right {
+	z-index: 2;
+	left: -700px;
+}
+
+div#main-photo-cont div#tagline {
+	display: none;
+	width: 700px;
+	height: 60px;
+	text-align: center;
+	background-color: #4d8f8f;
+	border-radius: 8px;
+}
+
+div#main-photo-cont div#tagline table#jobs {
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	border-spacing: 0px;
+}
+
+div#main-photo-cont div#tagline table#jobs td {
+	width: 33%;
+	padding: 0px;
+}
+
+div#main-photo-cont div#tagline table#jobs td p {
+	display: inline-block;
+	margin-top: 24px;
+	font-size: 18px;
+	font-weight: bold;
+}
