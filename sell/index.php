@@ -33,12 +33,25 @@
 					$types = array("iPhone 5c", "iPhone 5", "iPhone 5s", "iPhone 6", "iPhone 6 Plus", "iPhone 6s", "iPhone 6s Plus");
 					$sizes = array("8GB", "16GB", "32GB", "64GB", "128GB");
 					$conds = array("Poor", "Fair", "Excellent");
-					if (isset($_GET["type"]) && isset($_GET["size"]) && isset($_GET["cond"])) { 
-						if (in_array("$_GET['type']", $types) && in_array("$_GET['size']", $sizes) && in_array("$_GET['cond']", $conds)) {
-							echo "<span id='type'>$type</span><br><span id='size'>$size</span><br><span id='cond'>$cond</span>";
-						} else {
-							echo "<script>window.location.href='/';</script>";
-						}
+					if (isset($_GET["type"])) {
+						$type = $_GET["type"];
+					} else {
+						$type = "";
+					}
+					if (isset($_GET["size"])) {
+						$size = $_GET["size"];
+					} else {
+						$size = "";
+					}
+					if (isset($_GET["cond"])) {
+						$cond = $_GET["cond"];
+					} else {
+						$cond = "";
+					}
+					if (in_array("$type", $types) && in_array("$size", $sizes) && in_array("$cond", $conds)) {
+						echo "<span id='type'>$type</span><br><span id='size'>$size</span><br><span id='cond'>$cond</span>";
+					} else {
+						echo "<script>window.location.href='/';</script>";
 					}
 				?>
 			</div>
