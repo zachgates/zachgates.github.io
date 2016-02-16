@@ -171,7 +171,7 @@ function Builder () {
 		$("h2#scene-title").fadeOut(500, function () {
 			var scene = self.sceneNames[self.scene];
 			$("div#value span").text("$" + self.prices[self.phone][self.storage][self.condition]);
-			$("a#next-button").attr("href", "/sell/?type=" + self.phone + "&size=" + self.storage + "&cond=" + self.condition)
+			$("a#next-button").attr("href", encodeURI("/sell/?type=" + self.phone + "&size=" + self.storage + "&cond=" + self.condition));
 			$(this).text(scene).fadeIn(1000);
 			$("div#confirmation").slideDown();
 		});
