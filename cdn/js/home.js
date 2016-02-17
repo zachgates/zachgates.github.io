@@ -9,6 +9,7 @@ $(document).ready(function () {
 		}, 1000);
 		
 		$("div#main-photo-cont img#center").siblings().animate({
+			top: "0px",
 			left: "12px",
 			opacity: "1",
 		}, 1000);

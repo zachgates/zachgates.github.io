@@ -74,6 +74,7 @@ div#main-photo-cont div#img-cont img {
 	position: absolute;
 	width: 666px;
 	height: 400px;
+	top: 400px;
 	opacity: 0;
 }
 
@@ -84,7 +85,6 @@ div#main-photo-cont div#img-cont img#left {
 
 div#main-photo-cont div#img-cont img#center {
 	z-index: 3;
-	top: 400px;
 }
 
 div#main-photo-cont div#img-cont img#right {
