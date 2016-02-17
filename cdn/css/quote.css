@@ -148,6 +148,28 @@ div#main-content div#scene-cont div#iphone-conditions div.cond-cont span:hover {
 	background-color: #eeeeee;
 }
 
+div#main-content div#scene-cont div#iphone-conditions div.cond-cont span sup {
+	line-height: 0px;
+	font-size: 14px;
+}
+
+div#main-content div#scene-cont div#iphone-conditions div#conditions {
+	margin: 50px;
+}
+
+div#main-content div#scene-cont div#iphone-conditions div#conditions span {
+	display: block;
+	width: 100%;
+	margin: 5px;
+	font-size: 12px;
+}
+
+div#main-content div#scene-cont div#iphone-conditions div#conditions span sup {
+	display: inline-block;
+    width: 10px;
+    text-align: center;
+}
+
 div#main-content div#scene-cont div#confirmation {
 	display: none;
 	width: 1000px;
