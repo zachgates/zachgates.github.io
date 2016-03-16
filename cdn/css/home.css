@@ -1,8 +1,8 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	background-color: #bbd4d4;
-	color: #1d4e4e;
+	background-color: rgb(211, 166, 173);
+	color: rgb(47, 13, 31);
 	font-family: "Quicksand";
 	
 	background-image: url("/cdn/img/background.jpg");
@@ -60,36 +60,13 @@ div#main-content {
 div#main-photo-cont {
 	display: table;
 	margin: 0px auto;
+	background-color: rgb(158, 153, 213);
+	border: 2px solid rgb(47, 13, 31);
+	border-radius: 8px;
 }
 
-div#main-photo-cont div#img-cont {
-	position: relative;
-	width: 666px;
-	height: 400px;
-	padding: 0px 17px;
-	overflow: hidden;
-}
-
-div#main-photo-cont div#img-cont img {
-	position: absolute;
-	width: 666px;
-	height: 400px;
-	top: 400px;
-	opacity: 0;
-}
-
-div#main-photo-cont div#img-cont img#left {
-	z-index: 1;
-	left: 700px;
-}
-
-div#main-photo-cont div#img-cont img#center {
-	z-index: 3;
-}
-
-div#main-photo-cont div#img-cont img#right {
-	z-index: 2;
-	left: -700px;
+div#main-photo-cont div#name {
+	text-align: center;
 }
 
 div#main-photo-cont div#tagline {
@@ -97,7 +74,7 @@ div#main-photo-cont div#tagline {
 	width: 700px;
 	height: 60px;
 	text-align: center;
-	background-color: #bbd4d4;
+	background-color: rgb(121, 111, 212);
 	border-radius: 8px;
 }
 
