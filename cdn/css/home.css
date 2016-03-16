@@ -16,7 +16,7 @@ body {
 }
 
 a {
-	color: #1d4e4e;
+	color: rgb(47, 13, 31);
 	text-decoration: none;
 }
 
@@ -70,7 +70,6 @@ div#main-photo-cont div#name {
 }
 
 div#main-photo-cont div#tagline {
-	display: none;
 	width: 700px;
 	height: 60px;
 	text-align: center;
