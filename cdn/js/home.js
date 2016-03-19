@@ -16,7 +16,7 @@ var nextBackground = function (bg) {
 	}
 	
 	// Handle background
-	$("div#nextbg").css("background-image", "/cdn/img/background" + bg ".jpg");
+	$("div#nextbg").css("background-image", "/cdn/img/background" + bg + ".jpg");
 	$("div#currbg").fadeOut(250);
 	
 	// Handle colors
