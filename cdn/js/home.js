@@ -40,13 +40,12 @@ $(document).ready(function () {
 		$("div.header").slideDown(500, function () {
 			$("div#intro-cont").fadeIn(500, function () {
 				$("div#full-cont").fadeIn(500);
+				setInterval(function () {
+					console.log(1);
+					var cbg = nextBackground(cbg);
+				}, 2000);
 			});
 		});
-	});
-	
-	setInterval(5000, function () {
-		console.log(1);
-		var cbg = nextBackground(cbg);
 	});
 
 });
