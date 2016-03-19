@@ -26,8 +26,8 @@ var nextBackground = function () {
 	
 	// Handle background
 	$("div#" + active[1]).css("background-image", "url('/cdn/img/background" + cbg + ".jpg')");
-	$("div#" + active[0]).fadeOut(500);
-	$("div#" + active[1]).fadeIn(500);
+	$("div#" + active[0]).fadeOut(1000);
+	$("div#" + active[1]).fadeIn(1000);
 	
 	// Handle colors
 	colors = background2colors[cbg];
@@ -49,7 +49,7 @@ $(document).ready(function () {
 		$("div.header").slideDown(500, function () {
 			$("div#intro-cont").fadeIn(500, function () {
 				$("div#full-cont").fadeIn(500);
-				setInterval(nextBackground, 5000);
+				var bgLoop = setInterval(nextBackground, 30000);
 			});
 		});
 	});
