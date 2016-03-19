@@ -1,18 +1,10 @@
 body {
+	display: none;
 	margin: 0px;
 	padding: 0px;
 	background-color: #93a1b4;
 	color: #0b2327;
 	font-family: "Quicksand";
-	
-	background-image: url("/cdn/img/background0.jpg");
-	background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-	
-	@media (max-width: @iphone-screen) {
-		background-attachment: scroll;
-	}
 }
 
 a {
@@ -23,6 +15,36 @@ a {
 
 a:hover {
 	color: #98021f;
+}
+
+div#currbg, div#nextbg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	background-image: url("/cdn/img/background0.jpg");
+	background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+
+	@media (max-width: @iphone-screen) {
+		background-attachment: scroll;
+	}
+}
+
+div#nextbg {
+	z-index: 0;
+}
+
+div#currbg {
+	z-index: 1;
+}
+
+div#content {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
 }
 
 div.header {
