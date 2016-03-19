@@ -1,11 +1,11 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	background-color: rgb(211, 166, 173);
-	color: rgb(47, 13, 31);
+	background-color: #93a1b4;
+	color: #0b2327;
 	font-family: "Quicksand";
 	
-	background-image: url("/cdn/img/background.jpg");
+	background-image: url("/cdn/img/background0.jpg");
 	background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -16,8 +16,13 @@ body {
 }
 
 a {
-	color: rgb(47, 13, 31);
+	color: #55667d;
 	text-decoration: none;
+	transition: color 0.25s;
+}
+
+a:hover {
+	color: #98021f;
 }
 
 div.header {
@@ -60,8 +65,8 @@ div#main-content {
 div#main-photo-cont {
 	display: table;
 	margin: 0px auto;
-	background-color: rgb(158, 153, 213);
-	border: 2px solid rgb(47, 13, 31);
+	background-color: #ffffff;
+	border: 3px solid #000000;
 	border-radius: 8px;
 }
 
@@ -73,8 +78,9 @@ div#main-photo-cont div#tagline {
 	width: 700px;
 	height: 60px;
 	text-align: center;
-	background-color: rgb(121, 111, 212);
-	border-radius: 8px;
+	background-color: #98021f;
+	border-radius: 4px;
+	color: #ffffff;
 }
 
 div#main-photo-cont div#tagline table#jobs {
