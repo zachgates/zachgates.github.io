@@ -6,6 +6,13 @@ var background2colors = {
 		"#ffffff",
 		"#000000",
 	],
+	1: [
+		"",
+		"",
+		"",
+		"",
+		"",
+	],
 };
 var available = Object.keys(background2colors).map(parseFloat);
 
