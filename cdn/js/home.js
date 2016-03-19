@@ -9,13 +9,14 @@ var background2colors = {
 	],
 	1: [
 		"",
-		"",
+		"#ffffff",
 		"",
 		"",
 		"",
 	],
 };
 var available = Object.keys(background2colors).map(parseFloat);
+var active = ["currbg", "nextbg"];
 
 var nextBackground = function () {
 	// Check background exists
@@ -24,10 +25,9 @@ var nextBackground = function () {
 	}
 	
 	// Handle background
-	console.log(1);
-	console.log("/cdn/img/background" + cbg + ".jpg");
-	$("div#nextbg").css("background-image", "/cdn/img/background" + cbg + ".jpg");
-	$("div#currbg").fadeOut(250);
+	$("div#" + active[1]).css("background-image", "url('/cdn/img/background" + cbg + ".jpg')");
+	$("div#" + active[0]).fadeOut(500);
+	$("div#" + active[1]).fadeIn(500);
 	
 	// Handle colors
 	colors = background2colors[cbg];
@@ -37,8 +37,9 @@ var nextBackground = function () {
 	$("div#tagline").css("color", colors[3]);
 	$("div#intro-cont").css("border-color", colors[4]);
 	
-	// Return next background index
-	return cbg + 1;
+	// Handle setup
+	active.reverse()
+	cbg += 1;
 }
 
 $(document).ready(function () {
@@ -48,7 +49,7 @@ $(document).ready(function () {
 		$("div.header").slideDown(500, function () {
 			$("div#intro-cont").fadeIn(500, function () {
 				$("div#full-cont").fadeIn(500);
-				setInterval(nextBackground, 2000);
+				setInterval(nextBackground, 5000);
 			});
 		});
 	});
