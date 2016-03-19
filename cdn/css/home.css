@@ -89,8 +89,10 @@ div#intro-cont {
 	width: 50%;
 	margin: 0px auto;
 	background-color: #ffffff;
-	border: 3px solid #000000;
+	border: 3px solid;
+	border-color: #000000;
 	border-radius: 8px;
+	transition: background-color 0.25s, color 0.25s, border-color 0.25s;
 }
 
 div#intro-cont div#name {
@@ -102,6 +104,7 @@ div#intro-cont div#tagline {
 	background-color: #98021f;
 	border-radius: 4px;
 	color: #ffffff;
+	transition: background-color 0.25s, color 0.25s;
 }
 
 div#intro-cont div#tagline table#jobs {
