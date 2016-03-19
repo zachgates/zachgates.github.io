@@ -84,42 +84,49 @@ div#main-content {
 	padding-top: 150px;
 }
 
-div#main-photo-cont {
+div#intro-cont {
 	display: table;
+	width: 50%;
 	margin: 0px auto;
 	background-color: #ffffff;
 	border: 3px solid #000000;
 	border-radius: 8px;
 }
 
-div#main-photo-cont div#name {
+div#intro-cont div#name {
 	text-align: center;
 }
 
-div#main-photo-cont div#tagline {
-	width: 700px;
-	height: 60px;
+div#intro-cont div#tagline {
 	text-align: center;
 	background-color: #98021f;
 	border-radius: 4px;
 	color: #ffffff;
 }
 
-div#main-photo-cont div#tagline table#jobs {
+div#intro-cont div#tagline table#jobs {
 	width: 100%;
 	height: 100%;
 	padding: 0px;
 	border-spacing: 0px;
 }
 
-div#main-photo-cont div#tagline table#jobs td {
+div#intro-cont div#tagline table#jobs td {
 	width: 33%;
 	padding: 0px;
 }
 
-div#main-photo-cont div#tagline table#jobs td p {
+div#intro-cont div#tagline table#jobs td p {
 	display: inline-block;
 	margin-top: 24px;
 	font-size: 18px;
 	font-weight: bold;
+}
+
+div#intro-cont {
+	display: table;
+	margin: 0px auto;
+	background-color: #ffffff;
+	border: 3px solid #000000;
+	border-radius: 8px;
 }
