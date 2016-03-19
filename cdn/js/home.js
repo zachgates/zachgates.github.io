@@ -1,22 +1,23 @@
-var cbg = 0;
-var background2colors = {
-	0: [
-		"#ffffff",
-		"",
-		"#98021f",
-		"#ffffff",
-		"#000000",
-	],
-	1: [
-		"",
-		"#ffffff",
-		"",
-		"",
-		"",
-	],
-};
-var available = Object.keys(background2colors).map(parseFloat);
-var active = ["currbg", "nextbg"];
+var bgLoop,
+	cbg = 0,
+	background2colors = {
+		0: [
+			"#ffffff",
+			"",
+			"#98021f",
+			"#ffffff",
+			"#000000",
+		],
+		1: [
+			"",
+			"#ffffff",
+			"",
+			"",
+			"",
+		],
+	},
+	available = Object.keys(background2colors).map(parseFloat),
+	active = ["currbg", "nextbg"];
 
 var nextBackground = function () {
 	// Check background exists
