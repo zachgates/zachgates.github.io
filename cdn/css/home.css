@@ -84,7 +84,7 @@ div#main-content {
 	padding-top: 150px;
 }
 
-div#intro-cont {
+div.inner-main {
 	display: table;
 	width: 50%;
 	margin: 0px auto;
@@ -92,7 +92,7 @@ div#intro-cont {
 	border: 3px solid;
 	border-color: #000000;
 	border-radius: 8px;
-	transition: background-color 0.25s, color 0.25s, border-color 0.25s;
+	transition: background-color 1s, color 1s, border-color 1s;
 }
 
 div#intro-cont div#name {
@@ -104,7 +104,7 @@ div#intro-cont div#tagline {
 	background-color: #98021f;
 	border-radius: 4px;
 	color: #ffffff;
-	transition: background-color 0.25s, color 0.25s;
+	transition: background-color 1s, color 1s;
 }
 
 div#intro-cont div#tagline table#jobs {
@@ -124,4 +124,9 @@ div#intro-cont div#tagline table#jobs td p {
 	margin-top: 24px;
 	font-size: 18px;
 	font-weight: bold;
+}
+
+div#full-cont {
+	margin-top: 50px;
+	padding: 25px 0px 25px 0px;
 }

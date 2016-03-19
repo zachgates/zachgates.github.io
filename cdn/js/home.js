@@ -1,19 +1,19 @@
 var bgLoop,
-	cbg = 0,
+	cbg = 1,
 	background2colors = {
 		0: [
 			"#ffffff",
-			"",
+			"#0b2327",
 			"#98021f",
 			"#ffffff",
 			"#000000",
 		],
 		1: [
-			"",
+			"#7de6e8",
+			"#29283e",
+			"#c19e50",
 			"#ffffff",
-			"",
-			"",
-			"",
+			"#26233e",
 		],
 	},
 	available = Object.keys(background2colors).map(parseFloat),
@@ -32,11 +32,11 @@ var nextBackground = function () {
 	
 	// Handle colors
 	colors = background2colors[cbg];
-	$("div#intro-cont").css("background-color", colors[0]);
-	$("div#intro-cont").css("color", colors[1]);
+	$("div.inner-main").css("background-color", colors[0]);
+	$("div.inner-main").css("color", colors[1]);
 	$("div#tagline").css("background-color", colors[2]);
 	$("div#tagline").css("color", colors[3]);
-	$("div#intro-cont").css("border-color", colors[4]);
+	$("div.inner-main").css("border-color", colors[4]);
 	
 	// Handle setup
 	active.reverse()
@@ -50,7 +50,7 @@ $(document).ready(function () {
 		$("div.header").slideDown(500, function () {
 			$("div#intro-cont").fadeIn(500, function () {
 				$("div#full-cont").fadeIn(500);
-				// var bgLoop = setInterval(nextBackground, 30000);
+				var bgLoop = setInterval(nextBackground, 60000);
 			});
 		});
 	});
