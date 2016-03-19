@@ -11,7 +11,7 @@ var available = Object.keys(background2colors).map(parseFloat);
 
 var nextBackground = function (bg) {
 	// Check background exists
-	if (!available.included(bg)) {
+	if (!available.includes(bg)) {
 		bg = 0;
 	}
 	
