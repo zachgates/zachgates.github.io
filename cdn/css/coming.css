@@ -1,14 +1,9 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	background-color: rgb(211, 166, 173);
-	color: rgb(47, 13, 31);
+	background-color: rgb(147, 161, 180);
+	color: rgb(255, 255, 255);
 	font-family: "Quicksand";
-}
-
-a {
-	color: rgb(47, 13, 31);
-	text-decoration: none;
 }
 
 div.header {
@@ -39,8 +34,23 @@ div.header div#inner-cont span {
 	float: left;
 }
 
+div.header div#inner-cont span#portfolio {
+	margin-top: 2px;
+	font-size: 26px;
+}
+
 div.header div#inner-cont span#twitter {
 	float: right;
+}
+
+div.header a {
+	color: rgb(147, 161, 180);
+	text-decoration: none;
+	transition: color 1s;
+}
+
+div.header a:hover {
+	color: rgb(0, 0, 0);
 }
 
 div#main-content {

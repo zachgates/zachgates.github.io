@@ -3,15 +3,26 @@ body {
 	margin: 0px;
 	padding: 0px;
 	background-color: rgb(147, 161, 180);
-	color: rgb(11, 35, 39);
 	font-family: "Quicksand";
 }
 
+a {
+	text-decoration: none;
+}
+
+.noselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
 div#currbg, div#nextbg {
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	height: 100%;
-	background-image: url("/cdn/img/background0.jpg");
 	background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -28,7 +39,7 @@ div#currbg {
 div#content {
 	position: absolute;
 	width: 100%;
-	height: 100%;
+	padding-bottom: 50px;
 	z-index: 2;
 }
 
@@ -39,8 +50,7 @@ div.header {
 	width: 100%;
 	height: 100px;
 	z-index: 100;
-	background-color: rgb(152, 2, 31);
-	transition: background-color 1s;
+	transition: background-color 2s;
 }
 
 div.header div#inner-cont {
@@ -62,12 +72,16 @@ div.header div#bottom-border {
 	width: 100%;
 	height: 6px;
 	bottom: 0px;
-	background-color: rgb(0, 0, 0);
-	transition: background-color 1s;
+	transition: background-color 2s;
 }
 
 div.header div#inner-cont span {
 	float: left;
+}
+
+div.header div#inner-cont span#portfolio {
+	margin-top: 2px;
+	font-size: 26px;
 }
 
 div.header div#inner-cont span#twitter {
@@ -75,16 +89,15 @@ div.header div#inner-cont span#twitter {
 }
 
 div.header a {
-	color: rgb(255, 255, 255);
 	text-decoration: none;
 	transition: color 1s;
 }
 
-div.header a.bg0 {
+div.header a.bg0, table#jobs td.bg0 {
 	color: rgb(255, 255, 255);
 }
 
-div.header a.bg0:hover {
+div.header a.bg0:hover, table#jobs td.bg0:hover {
 	color: rgb(0, 0, 0);
 }
 
@@ -92,39 +105,51 @@ div.header div#bottom-border.bg0 {
 	background-color: rgb(0, 0, 0);
 }
 
-div.header a.bg1 {
+div.header a.bg1, table#jobs td.bg1 {
 	color: rgb(255, 255, 255);
 }
 
-div.header a.bg1:hover {
-	color: rgb(38, 35, 62);
+div.header a.bg1:hover, table#jobs td.bg1:hover {
+	color: rgb(34, 26, 19);
 }
 
 div.header div#bottom-border.bg1 {
-	background-color: rgb(38, 35, 62);
+	background-color: rgb(34, 26, 19);
 }
 
-div.header a.bg2 {
-	color: rgb(211, 228, 237);
+div.header a.bg2, table#jobs td.bg2 {
+	color: rgb(255, 255, 255);
 }
 
-div.header a.bg2:hover {
-	color: rgb(0, 0, 0);
+div.header a.bg2:hover, table#jobs td.bg2:hover {
+	color: rgb(38, 35, 62);
 }
 
 div.header div#bottom-border.bg2 {
-	background-color: rgb(0, 0, 0);
+	background-color: rgb(38, 35, 62);
 }
 
-div.header a.bg3 {
-	color: rgb(162, 178, 190);
+div.header a.bg3, table#jobs td.bg3 {
+	color: rgb(211, 228, 237);
 }
 
-div.header a.bg3:hover {
-	color: rgb(36, 20, 5);
+div.header a.bg3:hover, table#jobs td.bg3:hover {
+	color: rgb(0, 0, 0);
 }
 
 div.header div#bottom-border.bg3 {
+	background-color: rgb(0, 0, 0);
+}
+
+div.header a.bg4, table#jobs td.bg4 {
+	color: rgb(162, 178, 190);
+}
+
+div.header a.bg4:hover, table#jobs td.bg4:hover {
+	color: rgb(36, 20, 5);
+}
+
+div.header div#bottom-border.bg4 {
 	background-color: rgb(36, 20, 5);
 }
 
@@ -141,43 +166,76 @@ div.inner-main {
 	border: 3px solid;
 	border-color: rgb(0, 0, 0);
 	border-radius: 8px;
-	transition: background-color 1s, color 1s, border-color 1s;
+	transition: background-color 2s, color 2s, border-color 2s;
 }
 
-div#intro-cont div#name {
+div#head-cont div#name {
 	text-align: center;
+	transition: color 1s;
 }
 
-div#intro-cont div#tagline {
+div#head-cont div#tagline {
 	text-align: center;
 	background-color: rgb(152, 2, 31);
 	border-radius: 4px;
 	color: rgb(255, 255, 255);
-	transition: background-color 1s, color 1s;
+	transition: background-color 2s, color 2s;
 }
 
-div#intro-cont div#tagline table#jobs {
+div#head-cont div#tagline table#jobs {
 	width: 100%;
 	height: 100%;
 	padding: 0px;
 	border-spacing: 0px;
 }
 
-div#intro-cont div#tagline table#jobs td {
+div#head-cont div#tagline table#jobs td {
 	width: 33%;
 	padding: 0px;
+	cursor: pointer;
+	transition: color 1s;
 }
 
-div#intro-cont div#tagline table#jobs td p {
+div#head-cont div#tagline table#jobs td p {
 	display: inline-block;
 	margin-top: 24px;
 	font-size: 18px;
 	font-weight: bold;
 }
 
-div#full-cont {
+div#intro-cont, div#full-cont {
+	display: none;
 	margin-top: 50px;
-	padding: 25px 0px 25px 0px;
+	font-size: 12pt;
+	font-weight: bold;
+	line-height: 20pt;
+}
+
+div.wrapper {
+	padding: 25px;
+}
+
+div.wrapper hr {
+	width: 75%;
+	margin: 15px auto 15px auto;
+	border-color: #000000;
+}
+
+div#intro-cont div#cover p#intro {
+	margin: 0px;
+}
+
+div#intro-cont div#cover p#spec {
+	margin: 10px 0px;
+}
+
+div#intro-cont div#cover ul#spec-list {
+	margin: 0px;
+}
+
+div#full-cont div.wrapper p#title {
+	font-size: 16pt;
+	text-align: center;
 }
 
 @media screen and (max-device-width: 640px) {
@@ -191,20 +249,20 @@ div#full-cont {
 		border-radius: 20px;
 	}
 
-	div#intro-cont div#name {
+	div#head-cont div#name {
 		font-size: 22pt;
 	}
 
-	div#intro-cont div#tagline {
+	div#head-cont div#tagline {
 		border-radius: 16px;
 	}
 
-	div#intro-cont div#tagline table#jobs td {
+	div#head-cont div#tagline table#jobs td {
 		display: inline-block;
 		width: 100%;
 	}
 
-	div#intro-cont div#tagline table#jobs td p {
+	div#head-cont div#tagline table#jobs td p {
 		margin: 20px;
 		font-size: 22pt;
 	}
