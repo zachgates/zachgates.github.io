@@ -1,5 +1,5 @@
 var bgLoop,
-	cbg = 1,
+	cbg = 0,
 	background2colors = {
 		0: [
 			"#ffffff",
@@ -21,6 +21,7 @@ var bgLoop,
 
 var nextBackground = function () {
 	// Check background exists
+	cbg += 1;
 	if (!available.includes(cbg)) {
 		cbg = 0;
 	}
@@ -40,7 +41,6 @@ var nextBackground = function () {
 	
 	// Handle setup
 	active.reverse()
-	cbg += 1;
 }
 
 $(document).ready(function () {
