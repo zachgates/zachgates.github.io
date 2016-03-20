@@ -2,18 +2,32 @@ var bgLoop,
 	cbg = 0,
 	background2colors = {
 		0: [
-			"#ffffff",
-			"#0b2327",
-			"#98021f",
-			"#ffffff",
-			"#000000",
+			"255, 255, 255",
+			" 11,  35,  39",
+			"152,   2,  31",
+			"255, 255, 255",
+			"  0,   0,   0",
 		],
 		1: [
-			"#7de6e8",
-			"#29283e",
-			"#c19e50",
-			"#ffffff",
-			"#26233e",
+			"187, 254, 252",
+			" 41,  40,  62",
+			"193, 158,  80",
+			"255, 255, 255",
+			" 38,  35,  62",
+		],
+		2: [
+			"211, 228, 237",
+			" 58,  79,  85",
+			" 84, 117,  67",
+			"211, 228, 237",
+			"  0,   0,   0",
+		],
+		3: [
+			"162, 178, 190",
+			" 49,  28,   8",
+			" 97,  79,  79",
+			"215, 216, 218",
+			" 49,  28,   8",
 		],
 	},
 	available = Object.keys(background2colors).map(parseFloat),
@@ -33,11 +47,12 @@ var nextBackground = function () {
 	
 	// Handle colors
 	colors = background2colors[cbg];
-	$("div.inner-main").css("background-color", colors[0]);
-	$("div.inner-main").css("color", colors[1]);
-	$("div#tagline").css("background-color", colors[2]);
-	$("div#tagline").css("color", colors[3]);
-	$("div.inner-main").css("border-color", colors[4]);
+	$("div.inner-main").css("background-color", "rgba(" + colors[0] + ", 0.75)");
+	$("div.inner-main").css("color", "rgb(" + colors[1] + ")");
+	$("div.header, div#tagline").css("background-color", "rgb(" + colors[2] + ")");
+	$("div#tagline").css("color", "rgb(" + colors[3] + ")");
+	$("div.inner-main").css("border-color", "rgb(" + colors[4] + ")");
+	$("div.header div#bottom-border, div.header a").removeClass().addClass("bg" + cbg);
 	
 	// Handle setup
 	active.reverse()
@@ -45,7 +60,7 @@ var nextBackground = function () {
 
 $(document).ready(function () {
 
-	$("div#main-photo-cont").hide();
+	$("div#intro-cont, div#full-cont").hide();
 	$("body").fadeIn(750, function () {
 		$("div.header").slideDown(500, function () {
 			$("div#intro-cont").fadeIn(500, function () {
