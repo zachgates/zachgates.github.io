@@ -1,4 +1,3 @@
-RewriteEngine on
-RewriteCond %{REQUEST_URI} !/index.html$ 
-RewriteCond %{REMOTE_HOST} !^000\.000\.000\.000
-RewriteRule $ /index.html [R=302,L] 
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !=/index.html
+RewriteRule ^ /index.html [R=302]
