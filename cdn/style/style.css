@@ -122,7 +122,11 @@ div.cont-section#about-me > p:not(first-of-type) {
 
 /* Handle mobile changes. */
 
-@media screen and (max-device-width: 640px) {
+@media only screen 
+	and (min-device-width : 320px) 
+	and (max-device-width : 568px) 
+	and (orientation : portrait)
+{
 
 	div.cover-m {
 		min-height: auto !important;
