@@ -125,12 +125,12 @@ div.cont-section#about-me > p:not(first-of-type) {
 @media screen and (max-device-width: 640px) {
 
 	div.cover-m {
-		height: auto !important;
+		min-height: auto !important;
 	}
 
 	div.cont-section {
 		width: 88%;
-		padding: 0px 6%;
+		padding: 0px 6% 6% 6%;
 	}
 	
 	div.cont-section hr {
