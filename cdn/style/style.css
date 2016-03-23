@@ -77,7 +77,7 @@ div.cont-section h1.title {
 /* Intro section. */
 
 div#intro {
-	background: center fixed no-repeat url("/cdn/img/background.jpg");
+	background: center fixed no-repeat url("cdn/img/background.jpg");
 	background-size: cover;
 }
 
