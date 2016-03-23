@@ -142,3 +142,24 @@ div.cont-section#about-me > p:not(first-of-type) {
 	}
 
 }
+
+@media only screen 
+	and (min-device-width : 640px) 
+	and (max-device-width : 1136px) 
+	and (orientation : portrait)
+{
+
+	div.cover-m {
+		min-height: auto !important;
+	}
+
+	div.cont-section {
+		width: 88%;
+		padding: 0px 6% 6% 6%;
+	}
+	
+	div.cont-section hr {
+		width: 85%;
+	}
+
+}
