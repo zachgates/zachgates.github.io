@@ -1,3 +1,2 @@
-RewriteEngine On
-RewriteCond %{REQUEST_URI} !=/index.html
-RewriteRule ^ /index.html [R=302]
+RewriteEngine on
+ErrorDocument 404 http://zachgates.com/
