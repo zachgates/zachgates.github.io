@@ -1,105 +1,42 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="/cdn/css/font-awesome.min.css" />
-		<link rel="stylesheet" href="/cdn/css/quicksand.css" />
-		<link rel="stylesheet" href="/cdn/css/style.css" />
-		<link rel="stylesheet" href="style.css" />
-		<script src="/cdn/js/jquery.js"></script>
-		<script src="init.js"></script>
+		<link rel="stylesheet" href="cdn/style/fonts.css" />
+		<link rel="stylesheet" href="cdn/style/style.css" />
+		<script src="cdn/js/jquery.js"></script>
+		<script src="cdn/js/init.js"></script>
 	</head>
 	<body>
-		<div id="background">
-			<div id="currbg"></div>
-			<div id="nextbg"></div>
+		<div id="intro" class="cover noselect">
+			<div id="intro-cont" class="center">
+				<h1>Zach Gates</h1>
+				<hr>
+				<h3>Developer</h3>
+			</div>
+			<div id="intro-overlay" class="accent overlay"></div>
 		</div>
-		<div id="content">
-			<div class="header">
-				<div id="bottom-border"></div>
-				<div id="inner-cont">
-					<span id="home">
-						<a href="/">
-							<i class="fa fa-home" title="Home"></i>
-						</a>
-					</span>
-					<span id="twitter">
-						<a href="http://twitter.com/zachgates7">
-							<i class="fa fa-twitter" title="Twitter"></i>
-						</a>
-					</span>
-					<span id="portfolio">
-						<a href="/coming-soon">
-							<i class="fa fa-trophy" title="Portfolio"></i>
-						</a>
-					</span>
+		<div id="about-me" class="cont-section cover-m">
+			<h1 class="title">About Me</h1>
+			<hr>
+			<p>I'm a self-taught programmer, web developer, and graphic designer.</p>
+			<div class="trifold">
+				<div class="cell">
+					<p>Python Developer</p>
+					<p>I started programming with Python in early 2011. Now, over 5 years later, I'm creating multipurpose applications; turning concepts into reality.</p>
+					<p>Python is my favorite language to program in because of it's speed, flexibility, and power to quickly solve complex problems. If you're reading this as a developer, I strongly recommend learning Python.</p>
+				</div>
+				<div class="cell">
+					<p>Full-stack developer</p>
+					<p>When I first entered the field of web development, I loved the concept of transforming a blank screen into whatever I could imagine. Now, nearly 7 years later, I'm developing websites for a living.</p>
+					<p>I've had the opportunity to work with a wide range of tools; namely jQuery, PHP, and Django. Currently, I utilize these tools on a daily basis in my work as a freelancer.</p>
+				</div>
+				<div class="cell">
+					<p>iOS Developer</p>
+					<p>About 3 years ago, I started gaining interest in the world of mobile applications. I started small, designing small games based on suggestions from friends and relatives.</p>
+					<p>Now, I've become proficient in Swift and Objective-C, and continue to program iOS applications in my free time; designing content and structure for small projects.</p>
 				</div>
 			</div>
-			<div id="main-content">
-				<div id="head-cont" class="inner-main">
-					<div id="name" name="cover">
-						<h1>Zach Gates</h1>
-					</div>
-					<div id="tagline">
-						<table id="jobs">
-							<tbody>
-								<tr class="noselect">
-									<td name="pydev">
-										<p>Python Developer</p>
-									</td>
-									<td name="stackdev">
-										<p>Full-Stack Developer</p>
-									</td>
-									<td name="ios">
-										<p>iOS Developer</p>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-				<div id="intro-cont" class="inner-main">
-					<div class="wrapper">
-						<div id="cover">
-							<p id="intro">Hi, my name is Zach Gates. I'm a self-taught programmer, full-stack web developer, and graphic designer. I am currently working as a freelancer; designing custom websites for small businesses.</p>
-							<hr noshade />
-							<p id="spec">Strengths:</p>
-							<ul id="spec-list">
-								<li>Clean, PEP-compliant programming in Python</li>
-								<li>Object-oriented JavaScript programming</i>
-								<li>Working with jQuery and other libraries</li>
-								<li>Backend structuring in MySQL</li>
-								<li>Quick, logical thinking</li>
-								<li>Constant clear communication</li>
-							</ul>
-						</div>
-						<div id="pydev" style="display:none;">
-							<p style="margin-top:0px;">I started programming with Python in early 2011. Now, over 5 years later, I'm creating multipurpose applications; turning concepts into reality.</p>
-							<p>Python is my favorite language to program in because of it's speed, flexibility, and power to quickly solve complex problems. If you're reading this as a developer, I strongly recommend learning Python.</p>
-							<a href="/coming-soon" class="accent">
-								<p style="margin-bottom:0px;">Check out my portfolio to see some of my work in Python.</p>
-							</a>
-						</div>
-						<div id="stackdev" style="display:none;">
-							<p style="margin-top:0px;">When I first entered the field of web development, I loved the concept of transforming a blank screen into whatever I could imagine. Now, nearly 7 years later, I'm developing websites for a living.</p>
-							<p style="margin-bottom:0px;">I've had the opportunity to work with a wide range of tools; namely jQuery, PHP, and Django. Currently, I utilize these tools on a daily basis in my work as a freelancer.</p>
-						</div>
-						<div id="ios" style="display:none;">
-							<p style="margin-top:0px;">About 3 years ago, I started gaining interest in the world of mobile applications. I started small, designing small games based on suggestions from friends and relatives.</p>
-							<p style="margin-bottom:0px;">Now, I've become proficient in Swift and Objective-C, and continue to program iOS applications in my free time; designing content and structure for small projects.</p>
-						</div>
-					</div>
-				</div>
-				<div id="full-cont" class="inner-main">
-					<div class="wrapper">
-						<div id="blog" class="section">
-							<p id="title">Blog Posts</p>
-							<hr noshade />
-							<ul id="post-list">
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
+			<p>Currently, I'm working from home as a freelancer, designing custom websites for small businesses.</p>
 		</div>
 	</body>
 </html>
