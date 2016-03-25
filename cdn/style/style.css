@@ -59,6 +59,8 @@ div.testimonial span {
 /* Trifolds */
 
 div.trifold {
+	display: inline-block;
+	width: 100%;
 	padding: 3% 0px 0px 0px;
 	font-size: 0px;
 	letter-spacing: 0px;
@@ -68,19 +70,9 @@ div.trifold div.cell {
 	display: inline-block;
 	width: 27%;
 	min-height: 100%;
+	float: left;
 	padding: 0px 3%;
 	vertical-align: top;
-}
-
-div.trifold div.cell p:first-of-type {
-	margin: 10px 0px;
-	font-size: 18px;
-}
-
-div.trifold div.cell p:not(:first-of-type) {
-	font-size: 14px;
-	line-height: 24px;
-	text-align: left;
 }
 
 /* Sidebar */
@@ -89,52 +81,74 @@ div#sidebar {
 	position: fixed;
 	width: 100px;
 	margin: 25px 0px 0px 25px;
-	border: 2px solid #333333;
-	border-bottom-width: 0px;
+	border-radius: 20px;
 	z-index: 3;
-	transition: background-color 7.5s;
+	background-color: #222222;
 }
 
 div#sidebar a {
 	display: table;
 	width: 100%;
 	height: 80px;
-	border: 0px solid #333333;
+	border: 0px solid #ffffff;
 	border-bottom-width: 2px;
 	text-decoration: none;
-	transition: background-color 0.5s;
+	color: #ffffff;
+	transition: background-color 0.5s, color 0.5s;
+}
+
+div#sidebar a:first-of-type {
+	border-radius: 18px 18px 0px 0px;
+}
+
+div#sidebar a:last-of-type {
+	border-bottom-width: 0px;
+	border-radius: 0px 0px 18px 18px;
 }
 
 div#sidebar a:hover {
-	background-color: #000000;
+	background-color: #ffffff;
+	color: #000000;
 }
 
 div#sidebar a span {
 	display: table-cell;
 	vertical-align: middle;
-	color: #ffffff;
 	font-size: 15px;
 }
 
 div#sidebar a span i {
-	font-size: 25px;
+	font-size: 30px;
 }
 
 /* Page sections */
 
 div.cont-section {
-	position: absolute;
 	width: 60%;
-	padding: 0px 20%;
+	padding: 30px 20%;
 	z-index: 2;
 }
 
 div.cont-section hr {
+	position: relative;
 	margin: 0px auto;
+	border: 0px solid #555;
+	border-top-width: 2px;
+}
+
+div.cont-section hr:after {
+	position: absolute;
+	bottom: -6px;
+	left: 50%;
+	margin-left: -6px;
+	content: "\f111";
+	font-family: FontAwesome;
+	font-size: 12px;
 }
 
 div.cont-section h1.title {
-	margin: 40px 0px 20px 0px;
+	margin-bottom: 30px;
+	font-family: "uppercase";
 }
 
 /* Intro section */
@@ -168,6 +182,56 @@ div#intro-cont h3 {
 	font-weight: 100;
 }
 
+/* About Me section */
+
+div#about-cont div.trifold div.cell p:first-of-type {
+	margin: 10px 0px;
+	font-size: 18px;
+}
+
+div#about-cont div.trifold div.cell p:not(:first-of-type) {
+	font-size: 14px;
+	line-height: 24px;
+	text-align: left;
+}
+
+/* Contact section */
+
+div.cont-section#contact {
+	background-color: #dddddd;
+}
+
+div.cont-section#contact div#info-cont {
+	margin-top: 40px;
+}
+
+div#info-cont div.trifold div.cell {
+	margin-bottom: 3%;
+}
+
+div#info-cont div.trifold div.cell:nth-last-child(-n+3) {
+	margin-bottom: 0px;
+}
+
+div#info-cont span.media {
+	display: inline-table;
+	width: 50%;
+	background-color: #666666;
+	font-size: 50px;
+	color: #ffffff;
+	border-radius: 50%;
+	opacity: 0.5;
+	transition: background-color 7.5s, color 0.5s, opacity 0.5s;
+}
+
+div#info-cont span.media:hover {
+	opacity: 1;
+}
+
+div#info-cont span.media i {
+	display: table-cell;
+	vertical-align: middle;
+}
 
 /* Handle mobile changes */
 

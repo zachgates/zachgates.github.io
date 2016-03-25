@@ -3,6 +3,7 @@ $(document).ready(function () {
 	resize();
 	beginLanding();
 	redirectAnchors();
+	setupScene();
 	setTimeout(redirect, 250);
 });
 
@@ -67,6 +68,14 @@ var handleCenter = function () {
 	$("div.center-h").each(applyPad, [true, false]); // Center height-only.
 }
 
+/* Setup */
+
+var setupScene = function () {
+	$("div.cont-section span.media").each(function () {
+		$(this).css("height", $(this).width() + "px");
+	});
+}
+
 /* Handle landing animation */
 
 var beginLanding = function () {
@@ -80,7 +89,7 @@ var beginLanding = function () {
 			"#ca7b88", // Red
 		];
 	function swapColor () {
-		$("div.accent").css("background-color", bgs[iters % bgs.length]);
+		$(".accent").css("background-color", bgs[iters % bgs.length]);
 		iters++;
 	}
 	swapColor();
