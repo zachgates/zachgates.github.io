@@ -31,9 +31,31 @@ div.overlay {
 	height: 100%;
 }
 
-/* Trifold objects. */
+/* Testimonials */
+
+div.testimonial {
+	display: table;
+	padding: 3% 7% 0px 7%;
+}
+
+div.testimonial > img, div.testimonial span {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: left;
+}
+
+div.testimonial > img {
+	border-radius: 50%;
+}
+
+div.testimonial span {
+	padding: 3%;
+}
+
+/* Trifolds */
 
 div.trifold {
+	padding: 3% 0px 0px 0px;
 	font-size: 0px;
 	letter-spacing: 0px;
 }
@@ -77,7 +99,7 @@ div.cont-section h1.title {
 /* Intro section. */
 
 div#intro {
-	background: center fixed no-repeat url("/cdn/img/background.jpg");
+	background: center fixed no-repeat url("../img/background.jpg");
 	background-size: cover;
 }
 
@@ -109,16 +131,7 @@ div#intro-cont h3 {
 
 /* About Me section. */
 
-div.cont-section#about-me > p:first-of-type {
-	margin: 40px 0px 30px 0px;
-	font-size: 20px;
-	line-height: 30px;
-}
 
-div.cont-section#about-me > p:not(first-of-type) {
-	margin: 30px 0px;
-	font-size: 16px;
-}
 
 /* Handle mobile changes. */
 
