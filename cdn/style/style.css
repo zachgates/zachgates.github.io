@@ -102,12 +102,22 @@ div#sidebar a {
 	border: 0px solid #333333;
 	border-bottom-width: 2px;
 	text-decoration: none;
+	transition: background-color 0.5s;
+}
+
+div#sidebar a:hover {
+	background-color: #000000;
 }
 
 div#sidebar a span {
 	display: table-cell;
 	vertical-align: middle;
 	color: #ffffff;
+	font-size: 15px;
+}
+
+div#sidebar a span i {
+	font-size: 25px;
 }
 
 /* Page sections */

@@ -2,18 +2,19 @@ $(document).ready(function () {
 	$(window).on("resize", resize);
 	resize();
 	beginLanding();
+	redirectAnchors();
 });
 
 /* Calculate viewport width and height. */
 
-calcFull = function () {
+var calcFull = function () {
 	return [
 		$(window).width(),
 		$(window).height(),
 	];
 }
 
-calcFullPx = function () {
+var calcFullPx = function () {
 	return calcFull().map(function (e) {
 		return e + "px";
 	});
@@ -21,7 +22,7 @@ calcFullPx = function () {
 
 /* Calculate padding needed to center an element. */
 
-calcPadPx = function (elem) {
+var calcPadPx = function (elem) {
 	var full = calcFull();
 	var w = (full[0] - $(elem).width())  / 2 + "px",
 		h = (full[1] - $(elem).height()) / 2 + "px";
@@ -30,14 +31,14 @@ calcPadPx = function (elem) {
 
 /* Handle resize of viewport. */
 
-resize = function () {
+var resize = function () {
 	handleCover(...calcFullPx());
 	handleCenter();
 }
 
 /* Handle "cover" class during resize. */
 
-handleCover = function (w, h) {
+var handleCover = function (w, h) {
 	$("div.cover").css({               // Exact cover.
 		width: w,
 		height: h,
@@ -52,7 +53,7 @@ handleCover = function (w, h) {
 
 /* Handle "center" class during resize. */
 
-handleCenter = function () {
+var handleCenter = function () {
 	function applyPad (needw, needh) {
 		var pad = calcPadPx(this);
 		$(this).css({
@@ -67,7 +68,7 @@ handleCenter = function () {
 
 /* Handle landing animation. */
 
-beginLanding = function () {
+var beginLanding = function () {
 	var iters = 0,
 		bgs = [
 			"#a87bca", // Purple
@@ -83,4 +84,16 @@ beginLanding = function () {
 	}
 	swapColor();
 	setInterval(swapColor, 6000);
+}
+
+var redirectAnchors = function () {
+	$("div#sidebar a").each(function () {
+		var loc = this.href.split("/").pop();
+		this.href = "javascript:scrollTo('" + loc + "')"
+	});
+}
+
+var scrollTo = function (query) {
+	var pos = $("#" + query).offset().top;
+	$("html, body").animate({scrollTop: pos});
 }
