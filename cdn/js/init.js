@@ -95,5 +95,7 @@ var redirectAnchors = function () {
 
 var scrollTo = function (query) {
 	var pos = $("#" + query).offset().top;
-	$("html, body").animate({scrollTop: pos});
+	$("html, body").animate({scrollTop: pos}, function () {
+		window.location.hash = "#/" + query;
+	});
 }
