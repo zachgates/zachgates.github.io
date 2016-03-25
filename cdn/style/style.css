@@ -159,6 +159,7 @@ div#intro {
 }
 
 div#intro-overlay {
+	display: none;
 	opacity: 0.6;
 	transition: background-color 7.5s;
 }
