@@ -3,9 +3,10 @@ $(document).ready(function () {
 	resize();
 	beginLanding();
 	redirectAnchors();
+	setTimeout(redirect);
 });
 
-/* Calculate viewport width and height. */
+/* Calculate viewport width and height */
 
 var calcFull = function () {
 	return [
@@ -20,7 +21,7 @@ var calcFullPx = function () {
 	});
 }
 
-/* Calculate padding needed to center an element. */
+/* Calculate padding needed to center an element */
 
 var calcPadPx = function (elem) {
 	var full = calcFull();
@@ -29,14 +30,14 @@ var calcPadPx = function (elem) {
 	return [w, h];
 }
 
-/* Handle resize of viewport. */
+/* Handle resize of viewport */
 
 var resize = function () {
 	handleCover(...calcFullPx());
 	handleCenter();
 }
 
-/* Handle "cover" class during resize. */
+/* Handle "cover" class during resize */
 
 var handleCover = function (w, h) {
 	$("div.cover").css({               // Exact cover.
@@ -51,7 +52,7 @@ var handleCover = function (w, h) {
 	$("div.cover-h").css({height: h}); // Cover height.
 }
 
-/* Handle "center" class during resize. */
+/* Handle "center" class during resize */
 
 var handleCenter = function () {
 	function applyPad (needw, needh) {
@@ -66,7 +67,7 @@ var handleCenter = function () {
 	$("div.center-h").each(applyPad, [true, false]); // Center height-only.
 }
 
-/* Handle landing animation. */
+/* Handle landing animation */
 
 var beginLanding = function () {
 	var iters = 0,
@@ -86,6 +87,8 @@ var beginLanding = function () {
 	setInterval(swapColor, 6000);
 }
 
+/* Handle links */
+
 var redirectAnchors = function () {
 	$("div#sidebar a").each(function () {
 		var loc = this.href.split("/").pop();
@@ -93,9 +96,13 @@ var redirectAnchors = function () {
 	});
 }
 
+var redirect = function () {
+	var loc = window.location.hash.replace("#/", "");
+	scrollTo(loc == "" ? "intro" : loc);
+}
+
 var scrollTo = function (query) {
 	var pos = $("#" + query).offset().top;
-	$("html, body").animate({scrollTop: pos}, function () {
-		window.location.hash = "#/" + query;
-	});
+	$("html, body").animate({scrollTop: pos});
+	window.location.hash = "#/" +(query == "intro" ? "" : query);
 }
