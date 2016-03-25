@@ -31,6 +31,10 @@ div.overlay {
 	height: 100%;
 }
 
+div.accent {
+	background-color: #ca7b88;
+}
+
 /* Testimonials */
 
 div.testimonial {
@@ -79,7 +83,34 @@ div.trifold div.cell p:not(:first-of-type) {
 	text-align: left;
 }
 
-/* Page sections. */
+/* Sidebar */
+
+div#sidebar {
+	position: fixed;
+	width: 100px;
+	margin: 25px 0px 0px 25px;
+	border: 2px solid #333333;
+	border-bottom-width: 0px;
+	z-index: 3;
+	transition: background-color 7.5s;
+}
+
+div#sidebar a {
+	display: table;
+	width: 100%;
+	height: 80px;
+	border: 0px solid #333333;
+	border-bottom-width: 2px;
+	text-decoration: none;
+}
+
+div#sidebar a span {
+	display: table-cell;
+	vertical-align: middle;
+	color: #ffffff;
+}
+
+/* Page sections */
 
 div.cont-section {
 	position: absolute;
@@ -96,7 +127,7 @@ div.cont-section h1.title {
 	margin: 40px 0px 20px 0px;
 }
 
-/* Intro section. */
+/* Intro section */
 
 div#intro {
 	background: center fixed no-repeat url("../img/background.jpg");
@@ -104,8 +135,6 @@ div#intro {
 }
 
 div#intro-overlay {
-	display: none;
-	background-color: #ca7b88;
 	opacity: 0.6;
 	transition: background-color 7.5s;
 }
@@ -129,11 +158,8 @@ div#intro-cont h3 {
 	font-weight: 100;
 }
 
-/* About Me section. */
 
-
-
-/* Handle mobile changes. */
+/* Handle mobile changes */
 
 @media only screen 
 	and (min-device-width : 320px) 

@@ -2,6 +2,7 @@ $(document).ready(function () {
 	$(window).on("resize", resize);
 	resize();
 	beginLanding();
+	redirect();
 });
 
 /* Calculate viewport width and height. */
@@ -75,12 +76,22 @@ beginLanding = function () {
 			"#7bcaa4", // Green
 			"#c9ca7b", // Yellow
 			"#ca9c7b", // Orange
-			"",        // Red
+			"#ca7b88", // Red
 		];
 	function swapColor () {
-		$("div#intro-overlay").css("background-color", bgs[iters % bgs.length]);
+		$("div.accent").css("background-color", bgs[iters % bgs.length]);
 		iters++;
 	}
-	$("div#intro-overlay").fadeIn(6000);
+	swapColor();
 	setInterval(swapColor, 6000);
+}
+
+/* Redirect */
+
+redirect = function () {
+	var loc = window.location.hash.replace("#/", "#"),
+		capt = $("a[href=" + loc + "]");
+	if (capt.length > 0) {
+		capt.trigger("click");
+	}
 }
