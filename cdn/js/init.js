@@ -3,7 +3,7 @@ $(document).ready(function () {
 	resize();
 	beginLanding();
 	redirectAnchors();
-	setTimeout(redirect);
+	setTimeout(redirect, 250);
 });
 
 /* Calculate viewport width and height */
