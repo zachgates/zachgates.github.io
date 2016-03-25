@@ -2,7 +2,6 @@ $(document).ready(function () {
 	$(window).on("resize", resize);
 	resize();
 	beginLanding();
-	redirect();
 });
 
 /* Calculate viewport width and height. */
@@ -84,14 +83,4 @@ beginLanding = function () {
 	}
 	swapColor();
 	setInterval(swapColor, 6000);
-}
-
-/* Redirect */
-
-redirect = function () {
-	var loc = window.location.hash.replace("#/", "#"),
-		capt = $("a[href=" + loc + "]");
-	if (capt.length > 0) {
-		capt.trigger("click");
-	}
 }
