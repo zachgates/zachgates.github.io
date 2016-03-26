@@ -166,11 +166,9 @@ div#intro-overlay {
 
 div#intro-cont {
 	position: absolute;
+	top: 10%;
 	z-index: 1;
-}
-
-div#intro-cont h1, div#intro-cont h3 {
-	color: #ffffff;
+	color: #000000;
 }
 
 div#intro-cont h1 {
@@ -194,6 +192,26 @@ div#about-cont div.trifold div.cell p:not(:first-of-type) {
 	font-size: 14px;
 	line-height: 24px;
 	text-align: left;
+}
+
+/* Skills section */
+
+div.cont-section#skills {
+	background-color: #cccccc;
+}
+
+div.cont-section#skills div#skills-cont {
+	margin-top: 40px;
+}
+
+div#skills-cont div.graph-cont {
+	display: inline-block;
+	width: 100%;
+	margin-top: 40px;
+}
+
+div#skills-cont canvas#skills-chart {
+	width: 100% !important;
 }
 
 /* Contact section */

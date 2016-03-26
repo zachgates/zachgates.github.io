@@ -5,6 +5,7 @@
 		<link rel="stylesheet" href="cdn/style/fonts.css" />
 		<link rel="stylesheet" href="cdn/style/style.css" />
 		<script src="cdn/js/jquery.js"></script>
+		<script src="cdn/js/chart.min.js"></script>
 		<script src="cdn/js/init.js"></script>
 	</head>
 	<body>
@@ -17,6 +18,9 @@
 			<a href="about">
 				<span>About Me</span>
 			</a>
+			<a href="skills">
+				<span>Skills</span>
+			</a>
 			<a href="contact">
 				<span>Contact</span>
 			</a>
@@ -27,12 +31,14 @@
 			-->
 		</div>
 		<div id="intro" class="cover noselect">
-			<div id="intro-cont" class="center">
+			<div id="intro-cont" class="center-w">
 				<h1>Zach Gates</h1>
 				<hr />
 				<h3>Developer</h3>
 			</div>
+			<!--
 			<div id="intro-overlay" class="cover accent"></div>
+			-->
 		</div>
 		<div id="about" class="cont-section cover-m">
 			<h1 class="title">About Me</h1>
@@ -58,6 +64,15 @@
 						<p>About 3 years ago, I started gaining interest in the world of mobile applications. I started small, designing small games based on suggestions from friends and relatives.</p>
 						<p>Now, I've become proficient in Swift and Objective-C, and continue to program iOS applications in my free time; designing content and structure for small projects.</p>
 					</div>
+				</div>
+			</div>
+		</div>
+		<div id="skills" class="cont-section cover-m">
+			<h1 class="title">Skills</h1>
+			<hr />
+			<div id="skills-cont">
+				<div class="graph-cont">
+					<canvas id="skills-chart"></canvas>
 				</div>
 			</div>
 		</div>
