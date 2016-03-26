@@ -41,7 +41,7 @@ div.accent {
 
 div.testimonial {
 	display: table;
-	padding: 3% 7% 0px 7%;
+	padding: 0px 7%;
 }
 
 div.testimonial > img, div.testimonial span {
@@ -63,8 +63,7 @@ div.testimonial span {
 div.trifold {
 	display: inline-block;
 	width: 100%;
-	padding: 3% 0px 0px 0px;
-	font-size: 0px;
+	padding-top: 3%;
 	letter-spacing: 0px;
 }
 
@@ -96,7 +95,7 @@ div#sidebar a {
 	border-bottom-width: 2px;
 	text-decoration: none;
 	color: #ffffff;
-	transition: background-color 0.5s, color 0.5s;
+	transition: background-color 0.5s;
 }
 
 div#sidebar a:first-of-type {
@@ -109,8 +108,7 @@ div#sidebar a:last-of-type {
 }
 
 div#sidebar a:hover {
-	background-color: #ffffff;
-	color: #000000;
+	background-color: #7b97ca;
 }
 
 div#sidebar a span {
@@ -169,7 +167,7 @@ div#intro-overlay {
 
 div#intro-cont {
 	position: absolute;
-	top: 10%;
+	top: 12.5%;
 	z-index: 1;
 	color: #000000;
 	font-family: "uppercase";
@@ -190,6 +188,10 @@ div#intro-cont h3 {
 }
 
 /* About Me section */
+
+div.cont-section#about hr {
+	margin-bottom: 40px;
+}
 
 div#about-cont div.trifold div.cell {
 	font-size: 14px;
@@ -216,10 +218,21 @@ div#skills {
 	padding: 40px 0px 20px 0px;
 }
 
+div#skills p {
+	margin: 0px;
+}
+
 div#skills div.graph-cont {
 	display: inline-block;
 	width: 100%;
 	margin-top: 40px;
+}
+
+div#skills div#foot {
+	display: inline-block;
+	margin-top: 30px;
+	text-align: left;
+	line-height: 25px;
 }
 
 div#skills canvas#skills-chart {
@@ -229,7 +242,7 @@ div#skills canvas#skills-chart {
 /* Contact section */
 
 div.cont-section#contact {
-	background-color: #dddddd;
+	background-color: #eeeeee;
 }
 
 div.cont-section#contact div#info-cont {

@@ -151,8 +151,8 @@ var setupSkills = function () {
 			],
 			datasets: [
 				{
-					fillColor: "#7b97ca",
-					strokeColor: "#7b97ca",
+					fillColor: "#7bcaa4",
+					strokeColor: "#7bcaa4",
 					data: [
 						100,
 						80,
