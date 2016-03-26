@@ -97,8 +97,8 @@ var beginLanding = function () {
 	}
 	$("div#intro-overlay").fadeIn(1000, function () {
 		swapColor();
-		setInterval(swapColor, 6000);
 	});
+	setInterval(swapColor, 6000);
 }
 
 /* Handle links */
