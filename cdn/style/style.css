@@ -212,17 +212,17 @@ div#about-cont div.trifold div.cell span i {
 	font-size: 18px;
 }
 
-div#skills-cont {
-	margin: 40px 0px 20px 0px;
+div#skills {
+	padding: 40px 0px 20px 0px;
 }
 
-div#skills-cont div.graph-cont {
+div#skills div.graph-cont {
 	display: inline-block;
 	width: 100%;
 	margin-top: 40px;
 }
 
-div#skills-cont canvas#skills-chart {
+div#skills canvas#skills-chart {
 	width: 100% !important;
 }
 
