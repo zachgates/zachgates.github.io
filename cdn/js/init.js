@@ -95,9 +95,13 @@ var beginLanding = function () {
 		$(".accent").css("background-color", bgs[iters % bgs.length]);
 		iters++;
 	}
+	/*
 	$("div#intro-overlay").fadeIn(1000, function () {
 		swapColor();
+		setInterval(swapColor, 6000);
 	});
+	*/
+	swapColor();
 	setInterval(swapColor, 6000);
 }
 
