@@ -1,11 +1,12 @@
-$(document).ready(function () {
+$(window).bind("load", function () {
 	$(window).on("resize", resize);
+	$("body").css("opacity", 1);
 	resize();
-	beginLanding();
 	redirectAnchors();
 	setupScene();
 	setupSkills();
-	setTimeout(redirect, 250);
+	handleAccent();
+	setTimeout(redirect, 500);
 });
 
 /* Calculate viewport width and height */
@@ -79,9 +80,9 @@ var setupScene = function () {
 	});
 }
 
-/* Handle landing animation */
+/* Handle accent colors */
 
-var beginLanding = function () {
+var handleAccent = function () {
 	var iters = 0,
 		bgs = [
 			"#a87bca", // Purple
@@ -91,16 +92,15 @@ var beginLanding = function () {
 			"#ca9c7b", // Orange
 			"#ca7b88", // Red
 		];
+	$("div#info-cont span.media").each(function () {
+		var def = "color 0.5s, opacity 0.5s, background-color ",
+			num = (Math.random() * 5) + 1;
+		$(this).css("transition", def + num + "s");
+	});
 	function swapColor () {
 		$(".accent").css("background-color", bgs[iters % bgs.length]);
 		iters++;
 	}
-	/*
-	$("div#intro-overlay").fadeIn(1000, function () {
-		swapColor();
-		setInterval(swapColor, 6000);
-	});
-	*/
 	swapColor();
 	setInterval(swapColor, 6000);
 }
@@ -121,7 +121,7 @@ var redirect = function () {
 
 var scrollTo = function (query) {
 	var pos = $("#" + query).offset().top;
-	$("html, body").animate({scrollTop: pos});
+	$("html, body").animate({scrollTop: pos}, "slow");
 	window.location.hash = "#/" +(query == "intro" ? "" : query);
 }
 

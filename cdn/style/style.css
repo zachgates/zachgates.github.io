@@ -4,6 +4,8 @@ body {
 	text-align: center;
 	background-color: #fcfcfc;
 	color: #444444;
+	opacity: 0;
+	transition: opacity 0.5s;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -169,15 +171,20 @@ div#intro-cont {
 	top: 10%;
 	z-index: 1;
 	color: #000000;
+	font-family: "uppercase";
 }
 
 div#intro-cont h1 {
-	font-size: 75px;
+	font-size: 40px;
 	font-weight: 500;
 }
 
+div#intro-cont h1 i {
+	font-size: 60px;
+	font-style: normal;
+}
+
 div#intro-cont h3 {
-	font-family: "uppercase";
 	font-weight: 100;
 }
 
@@ -240,7 +247,7 @@ div#info-cont span.media {
 	color: #ffffff;
 	border-radius: 50%;
 	opacity: 0.5;
-	transition: background-color 7.5s, color 0.5s, opacity 0.5s;
+	transition: color 0.5s, opacity 0.5s, background-color 7.5s;
 }
 
 div#info-cont span.media:hover {
