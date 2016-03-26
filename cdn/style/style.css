@@ -127,7 +127,7 @@ div#sidebar a span i {
 
 div.cont-section {
 	width: 60%;
-	padding: 30px 20%;
+	padding: 40px 20%;
 	z-index: 2;
 }
 
@@ -149,8 +149,9 @@ div.cont-section hr:after {
 }
 
 div.cont-section h1.title {
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 	font-family: "uppercase";
+	color: #7b97ca;
 }
 
 /* Intro section */
@@ -190,25 +191,29 @@ div#intro-cont h3 {
 
 /* About Me section */
 
-div#about-cont div.trifold div.cell p:first-of-type {
-	margin: 10px 0px;
-	font-size: 18px;
-}
-
-div#about-cont div.trifold div.cell p:not(:first-of-type) {
+div#about-cont div.trifold div.cell {
 	font-size: 14px;
 	line-height: 24px;
 	text-align: left;
 }
 
-/* Skills section */
-
-div.cont-section#skills {
-	background-color: #cccccc;
+div#about-cont div.trifold div.cell span {
+	display: block;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 900;
+	line-height: 30px;
+	color: #7b97ca;
 }
 
-div.cont-section#skills div#skills-cont {
-	margin-top: 40px;
+div#about-cont div.trifold div.cell span i {
+	font-family: uppercase;
+	font-style: normal;
+	font-size: 18px;
+}
+
+div#skills-cont {
+	margin: 40px 0px 20px 0px;
 }
 
 div#skills-cont div.graph-cont {

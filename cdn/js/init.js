@@ -156,7 +156,7 @@ var setupSkills = function () {
 					data: [
 						100,
 						80,
-						60,
+						40,
 						100,
 						80,
 						80,
@@ -168,7 +168,7 @@ var setupSkills = function () {
 						100,
 						80,
 						80,
-						60,
+						40,
 						100,
 					]
 				}
@@ -183,7 +183,7 @@ var setupSkills = function () {
 			scaleShowHorizontalLines: false,
 			scaleShowVerticalLines: false,
 			barValueSpacing: $(this).width() * 0.0075,
-			tooltipTemplate: '<%= {"100":"Master","80":"Expert","60":"Proficient","40":"Familiar","20":"Beginner"}[value] %>',
+			tooltipTemplate: '<%= {"100":"Master","80":"Advanced","60":"Proficient","40":"Familiar","20":"Beginner"}[value] %>',
 			scaleFontSize: 14,
 		});
 }
