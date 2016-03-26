@@ -94,7 +94,7 @@ var handleAccent = function () {
 		];
 	$("div#info-cont span.media").each(function () {
 		var def = "color 0.5s, opacity 0.5s, background-color ",
-			num = (Math.random() * 5) + 1;
+			num = (Math.random() * 10) + 1;
 		$(this).css("transition", def + num + "s");
 	});
 	function swapColor () {
