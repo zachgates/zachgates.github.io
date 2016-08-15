@@ -155,7 +155,7 @@ div.cont-section h1.title {
 /* Intro section */
 
 div#intro {
-	background: center fixed no-repeat url("../img/background.jpg");
+	background: center fixed no-repeat url("../img/background-1.jpg");
 	background-size: cover;
 }
 
@@ -169,7 +169,7 @@ div#intro-cont {
 	position: absolute;
 	top: 12.5%;
 	z-index: 1;
-	color: #000000;
+	color: #ffffff;
 	font-family: "uppercase";
 }
 
