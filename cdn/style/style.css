@@ -193,79 +193,6 @@ div.cont-section#about hr {
 	margin-bottom: 40px;
 }
 
-/*
-div#about-cont div#grid {
-	position: relative;
-	width: 864px;
-	height: 201px;
-}
-
-div#about-cont div#grid div.item {
-	position: absolute;
-	padding: 20px;
-	top: 0px;
-	left: 0px;
-	color: #ffffff;
-	opacity: 0.5;
-	border-radius: 10px;
-	transition: color 0.5s, opacity 0.5s, background-color 7.5s, transform 0.5s;
-}
-
-div#about-cont div#grid div.item:hover {
-	opacity: 1.0;
-	transform: matrix(1.05, 0, 0, 1.05, 0, 0);
-}
-
-div#about-cont div#grid div.micro {
-	width: 161px;
-	height: 60px;
-}
-
-div#about-cont div#grid div.small {
-	width: 161px;
-	height: 161px;
-}
-
-div#about-cont div#grid div.medium {
-	width: 382px;
-	height: 161px;
-}
-
-div#about-cont div#grid div.large {
-	width: 382px;
-	height: 382px;
-}
-
-div#about-cont div#grid div.item div#header {
-	margin-bottom: 45px;
-	font-size: 10pt;
-	font-style: italic;
-}
-
-div#about-cont div#grid div.item div#header span.type {
-	text-align: left;
-	float: left;
-}
-
-div#about-cont div#grid div.item div#header span.date {
-	text-align: right;
-	float: right;
-}
-
-div#about-cont div#grid div.item h2.title {
-	text-align: left;
-	font-weight: 400;
-}
-
-div#about-cont div#grid div.item span.desc {
-	display: block;
-	margin-top: 50px;
-	width: 100%;
-	text-align: left;
-	font-size: 10pt;
-}
-*/
-
 div#about-cont div.trifold div.cell {
 	font-size: 14px;
 	line-height: 24px;
@@ -314,6 +241,10 @@ div#skills canvas#skills-chart {
 
 /* Contact section */
 
+div.cont-section#contact h1.title {
+	color: #303030;
+}
+
 div.cont-section#contact {
 	background-color: #eeeeee;
 }
@@ -348,6 +279,93 @@ div#info-cont span.media:hover {
 div#info-cont span.media i {
 	display: table-cell;
 	vertical-align: middle;
+}
+
+/* Extra section */
+
+div.cont-section#recommended {
+	background-color: #efdada;
+}
+
+div.cont-section#recommended h1.title {
+	color: #303030;
+}
+
+div#recommended-cont {
+	margin-top: 40px;
+}
+
+div#recommended-cont div#grid {
+	position: relative;
+	width: 864px;
+	height: 201px;
+}
+
+div#recommended-cont div#grid a.item {
+	display: block;
+	position: absolute;
+	padding: 20px;
+	top: 0px;
+	left: 0px;
+	color: #ffffff;
+	text-decoration: none;
+	background-color: #d36282;
+	transition: color 0.5s, background-color 7.5s, transform 0.5s;
+}
+
+div#recommended-cont div#grid a.item:hover {
+	transform: matrix(1.05, 0, 0, 1.05, 0, 0);
+}
+
+div#recommended-cont div#grid a.micro {
+	width: 161px;
+	height: 60px;
+}
+
+div#recommended-cont div#grid a.small {
+	width: 161px;
+	height: 161px;
+}
+
+div#recommended-cont div#grid a.medium {
+	width: 382px;
+	height: 161px;
+}
+
+div#recommended-cont div#grid a.large {
+	width: 382px;
+	height: 382px;
+}
+
+div#recommended-cont div#grid a.item div#header {
+	margin-bottom: 45px;
+	font-size: 10pt;
+	font-style: italic;
+}
+
+div#recommended-cont div#grid a.item div#header span.type {
+	text-align: left;
+	float: left;
+}
+
+div#recommended-cont div#grid a.item div#header span.date {
+	text-align: right;
+	float: right;
+}
+
+div#recommended-cont div#grid a.item h2.title {
+	text-align: left;
+	font-weight: 400;
+}
+
+div#recommended-cont div#grid a.item span.desc {
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	margin-bottom: 25px;
+	width: 100%;
+	text-align: left;
+	font-size: 10pt;
 }
 
 /* Handle mobile changes */

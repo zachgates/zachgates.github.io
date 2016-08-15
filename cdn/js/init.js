@@ -6,6 +6,7 @@ $(window).bind("load", function () {
 	setupScene();
 	setupSkills();
 	handleAccent();
+	addThumbnails();
 	setTimeout(redirect, 500);
 });
 
@@ -123,6 +124,15 @@ var scrollTo = function (query) {
 	var pos = $("#" + query).offset().top;
 	$("html, body").animate({scrollTop: pos}, "slow");
 	window.location.hash = "#/" +(query == "intro" ? "" : query);
+}
+
+/* Setup external links */
+
+var addThumbnails = function () {
+	$("div#grid a.item").each(function () {
+		$(this).css("background", "center no-repeat url('cdn/img/ref-" + this.id + ".png')");
+		$(this).css("background-size", "cover");
+	});
 }
 
 /* Setup chart */
