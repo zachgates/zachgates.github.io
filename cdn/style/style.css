@@ -37,27 +37,6 @@ div.accent {
 	background-color: #ca7b88;
 }
 
-/* Testimonials */
-
-div.testimonial {
-	display: table;
-	padding: 0px 7%;
-}
-
-div.testimonial > img, div.testimonial span {
-	display: table-cell;
-	vertical-align: middle;
-	text-align: left;
-}
-
-div.testimonial > img {
-	border-radius: 50%;
-}
-
-div.testimonial span {
-	padding: 3%;
-}
-
 /* Trifolds */
 
 div.trifold {
@@ -74,51 +53,6 @@ div.trifold div.cell {
 	float: left;
 	padding: 0px 3%;
 	vertical-align: top;
-}
-
-/* Sidebar */
-
-div#sidebar {
-	position: fixed;
-	width: 100px;
-	margin: 25px 0px 0px 25px;
-	border-radius: 20px;
-	z-index: 3;
-	background-color: #222222;
-}
-
-div#sidebar a {
-	display: table;
-	width: 100%;
-	height: 80px;
-	border: 0px solid #ffffff;
-	border-bottom-width: 2px;
-	text-decoration: none;
-	color: #ffffff;
-	transition: background-color 0.5s;
-}
-
-div#sidebar a:first-of-type {
-	border-radius: 18px 18px 0px 0px;
-}
-
-div#sidebar a:last-of-type {
-	border-bottom-width: 0px;
-	border-radius: 0px 0px 18px 18px;
-}
-
-div#sidebar a:hover {
-	background-color: #7b97ca;
-}
-
-div#sidebar a span {
-	display: table-cell;
-	vertical-align: middle;
-	font-size: 15px;
-}
-
-div#sidebar a span i {
-	font-size: 30px;
 }
 
 /* Page sections */
@@ -155,7 +89,7 @@ div.cont-section h1.title {
 /* Intro section */
 
 div#intro {
-	background: center fixed no-repeat url("../img/background-1.jpg");
+	background: center fixed no-repeat url("../img/background-2.jpg");
 	background-size: cover;
 }
 
@@ -167,9 +101,9 @@ div#intro-overlay {
 
 div#intro-cont {
 	position: absolute;
-	top: 12.5%;
+	top: 8%;
 	z-index: 1;
-	color: #ffffff;
+	color: #000000;
 	font-family: "uppercase";
 }
 
@@ -187,58 +121,6 @@ div#intro-cont h3 {
 	font-weight: 100;
 }
 
-/* About Me section */
-
-div.cont-section#about hr {
-	margin-bottom: 40px;
-}
-
-div#about-cont div.trifold div.cell {
-	font-size: 14px;
-	line-height: 24px;
-	text-align: left;
-}
-
-div#about-cont div.trifold div.cell span {
-	display: block;
-	text-align: center;
-	font-size: 1rem;
-	font-weight: 900;
-	line-height: 30px;
-	color: #7b97ca;
-}
-
-div#about-cont div.trifold div.cell span i {
-	font-family: uppercase;
-	font-style: normal;
-	font-size: 1.2rem;
-}
-
-div#skills {
-	padding: 40px 0px 20px 0px;
-}
-
-div#skills p {
-	margin: 0px;
-}
-
-div#skills div.graph-cont {
-	display: inline-block;
-	width: 100%;
-	margin-top: 40px;
-}
-
-div#skills div#foot {
-	display: inline-block;
-	margin-top: 30px;
-	text-align: left;
-	line-height: 25px;
-}
-
-div#skills canvas#skills-chart {
-	width: 100% !important;
-}
-
 /* Contact section */
 
 div.cont-section#contact h1.title {
@@ -247,10 +129,6 @@ div.cont-section#contact h1.title {
 
 div.cont-section#contact {
 	background-color: #eeeeee;
-}
-
-div.cont-section#contact div#info-cont {
-	margin-top: 40px;
 }
 
 div#info-cont div.trifold div.cell {
@@ -279,93 +157,6 @@ div#info-cont span.media:hover {
 div#info-cont span.media i {
 	display: table-cell;
 	vertical-align: middle;
-}
-
-/* Extra section */
-
-div.cont-section#recommended {
-	background-color: #efdada;
-}
-
-div.cont-section#recommended h1.title {
-	color: #303030;
-}
-
-div#recommended-cont {
-	margin-top: 40px;
-}
-
-div#recommended-cont div#grid {
-	position: relative;
-	width: 864px;
-	height: 422px;
-}
-
-div#recommended-cont div#grid a.item {
-	display: block;
-	position: absolute;
-	padding: 20px;
-	top: 0px;
-	left: 0px;
-	color: #ffffff;
-	text-decoration: none;
-	background-color: #d36282;
-	transition: color 0.5s, background-color 7.5s, transform 0.5s;
-}
-
-div#recommended-cont div#grid a.item:hover {
-	transform: matrix(1.05, 0, 0, 1.05, 0, 0);
-}
-
-div#recommended-cont div#grid a.micro {
-	width: 161px;
-	height: 60px;
-}
-
-div#recommended-cont div#grid a.small {
-	width: 161px;
-	height: 161px;
-}
-
-div#recommended-cont div#grid a.medium {
-	width: 382px;
-	height: 161px;
-}
-
-div#recommended-cont div#grid a.large {
-	width: 382px;
-	height: 382px;
-}
-
-div#recommended-cont div#grid a.item div#header {
-	margin-bottom: 45px;
-	font-size: 10pt;
-	font-style: italic;
-}
-
-div#recommended-cont div#grid a.item div#header span.type {
-	text-align: left;
-	float: left;
-}
-
-div#recommended-cont div#grid a.item div#header span.date {
-	text-align: right;
-	float: right;
-}
-
-div#recommended-cont div#grid a.item h2.title {
-	text-align: left;
-	font-weight: 400;
-}
-
-div#recommended-cont div#grid a.item span.desc {
-	display: block;
-	position: absolute;
-	bottom: 0px;
-	margin-bottom: 25px;
-	width: 100%;
-	text-align: left;
-	font-size: 10pt;
 }
 
 /* Handle mobile changes */

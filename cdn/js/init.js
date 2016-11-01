@@ -4,9 +4,7 @@ $(window).bind("load", function () {
 	resize();
 	redirectAnchors();
 	setupScene();
-	setupSkills();
 	handleAccent();
-	addThumbnails();
 	setTimeout(redirect, 500);
 });
 
@@ -124,77 +122,4 @@ var scrollTo = function (query) {
 	var pos = $("#" + query).offset().top;
 	$("html, body").animate({scrollTop: pos}, "slow");
 	window.location.hash = "#/" +(query == "intro" ? "" : query);
-}
-
-/* Setup external links */
-
-var addThumbnails = function () {
-	$("div#grid a.item").each(function () {
-		$(this).css("background", "center no-repeat url('cdn/img/ref-" + this.id + ".png')");
-		$(this).css("background-size", "cover");
-	});
-}
-
-/* Setup chart */
-
-var setupSkills = function () {
-	var skillsCont = $("canvas#skills-chart").get(0).getContext("2d"),
-		p2l = {"100":"Master","80":"Expert","60":"Proficient","40":"Familiar","20":"Beginner"}
-	var skillsChart = new Chart(skillsCont).Bar({
-			labels: [
-				"Python",
-				"Django",
-				"PHP",
-				"HTML",
-				"CSS",
-				"JavaScript",
-				"jQuery",
-				"Objective-C",
-				"Git",
-				"Windows",
-				"OS X",
-				"Linux",
-				"Photoshop",
-				"Vim",
-				"Wordpress",
-				"Chrome",
-			],
-			datasets: [
-				{
-					fillColor: "#7bcaa4",
-					strokeColor: "#7bcaa4",
-					data: [
-						100,
-						75,
-						25,
-						100,
-						75,
-						75,
-						75,
-						50,
-						100,
-						75,
-						100,
-						100,
-						75,
-						75,
-						25,
-						100,
-					]
-				}
-			],
-		},
-		{
-			responsive : true,
-			scaleOverride: true,
-			scaleSteps: 4,
-			scaleStepWidth: 25,
-			scaleStartValue: 0,
-			scaleShowHorizontalLines: false,
-			scaleShowVerticalLines: false,
-			barValueSpacing: $(this).width() * 0.0075,
-			scaleLabel: '<%= {"100":"Master","75":"Advanced","50":"Proficient","25":"Familiar"}[value] %>',
-			scaleFontSize: 14,
-			tooltipTemplate: '<%= {"100":"Master","75":"Advanced","50":"Proficient","25":"Familiar"}[value] %>',
-		});
 }
