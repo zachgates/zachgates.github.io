@@ -145,6 +145,7 @@ div#info-cont span.media {
 	background-color: #666666;
 	font-size: 50px;
 	color: #ffffff;
+	cursor: pointer;
 	border-radius: 50%;
 	opacity: 0.5;
 	transition: color 0.5s, opacity 0.5s, background-color 7.5s;
