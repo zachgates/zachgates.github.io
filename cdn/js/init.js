@@ -120,6 +120,9 @@ var redirect = function () {
 
 var scrollTo = function (query) {
 	var pos = $("#" + query).offset().top;
-	$("html, body").animate({scrollTop: pos}, "slow");
-	window.location.hash = "#/" +(query == "intro" ? "" : query);
+	var page = $("html, body")
+	page.animate({scrollTop: pos}, "slow", function () {
+		page.off("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove");
+	});
+	window.location.hash = "#/" + (query == "intro" ? "" : query);
 }

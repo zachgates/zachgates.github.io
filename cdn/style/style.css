@@ -2,7 +2,7 @@ body {
 	margin: 0px;
 	font-family: "Open Sans", sans-serif;
 	text-align: center;
-	background-color: #fcfcfc;
+	background-color: #eeeeee;
 	color: #444444;
 	opacity: 0;
 	transition: opacity 0.5s;
@@ -16,6 +16,11 @@ h1 {
 	font-weight: 100;
 	font-size: 50px;
 }
+
+a {
+	color: inherit;
+	text-decoration: none;
+} 
 
 .noselect {
 	-webkit-touch-callout: none;
@@ -35,6 +40,10 @@ div.overlay {
 
 div.accent {
 	background-color: #ca7b88;
+}
+
+.stroked {
+	-webkit-text-stroke: 2px #333333;
 }
 
 /* Trifolds */
@@ -82,8 +91,8 @@ div.cont-section hr:after {
 
 div.cont-section h1.title {
 	margin-bottom: 40px;
+	color: #fcfcfc;
 	font-family: "uppercase";
-	color: #7b97ca;
 }
 
 /* Intro section */
@@ -103,7 +112,7 @@ div#intro-cont {
 	position: absolute;
 	top: 8%;
 	z-index: 1;
-	color: #000000;
+	color: #fafafa;
 	font-family: "uppercase";
 }
 
@@ -119,6 +128,48 @@ div#intro-cont span span {
 
 div#intro-cont h3 {
 	font-weight: 100;
+	color: #000000;
+}
+
+/* Portfolio section */
+
+ol.portfolio-list {
+	display: flex;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+ol.portfolio-list li {
+	width: 39%;
+    margin: 0px 5% 5% 5%;
+    background-color: #fff;
+    border: 1px solid #d1d5da;
+    border-radius: 3px;
+    text-align: left;
+}
+
+ol.portfolio-list li div {
+	display: flex;
+    padding: 16px;
+    margin: 0px;
+    position: relative;
+}
+
+ol.portfolio-list div.inner {
+	display: inline-grid;
+}
+
+ol.portfolio-list div.inner a {
+	margin-bottom: 5px;
+    color: #0366d6;
+    text-decoration: none;
+}
+
+ol.portfolio-list div.inner p {
+	margin: 0px;
 }
 
 /* Contact section */
@@ -128,7 +179,7 @@ div.cont-section#contact h1.title {
 }
 
 div.cont-section#contact {
-	background-color: #eeeeee;
+	background-color: #dddddd;
 }
 
 div#info-cont div.trifold div.cell {
