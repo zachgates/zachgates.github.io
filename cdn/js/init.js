@@ -48,7 +48,7 @@ var handleCover = function (w, h) {
 	});
 	$("div.cover-m").css({             // Minimum cover.
 		maxWidth: w,
-//		minHeight: h,
+		minHeight: h,
 	});
 	$("div.cover-w").css({width:  w}); // Cover width.
 	$("div.cover-h").css({height: h}); // Cover height.
