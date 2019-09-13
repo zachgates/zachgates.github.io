@@ -46,6 +46,10 @@ div.accent {
 	-webkit-text-stroke: 2px #333333;
 }
 
+div.cover-m {
+	min-height: 100%;
+}
+
 /* Trifolds */
 
 div.trifold {
